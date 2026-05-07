@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samnang Portfolio</title>
+    <meta
+      name="description"
+      content="A personal portfolio built with plain HTML, CSS, and JavaScript."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" id="site-header">
+        <div class="container nav-row">
+          <a class="brand" href="#top">
+            <span class="brand-mark">&gt;</span> NANG<span class="cursor-blink">_</span>
+          </a>
+
+          <nav class="desktop-nav" aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="nav-actions">
+            <button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle theme">
+              <span class="theme-icon theme-icon-sun">Sun</span>
+              <span class="theme-icon theme-icon-moon">Moon</span>
+            </button>
+            <a class="icon-link hide-mobile" href="https://github.com/" >GitHub</a>
+            <a class="icon-link hide-mobile" href="https://www.linkedin.com/in/samnang-sim-45706039a/" >LinkedIn</a>
+            <a class="resume-button hide-mobile" href="#">Resume / CV</a>
+            <button class="icon-button mobile-only" id="menu-toggle" type="button" aria-label="Open menu">
+              Menu
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu-backdrop" id="menu-backdrop"></div>
+        <div class="mobile-menu-panel">
+          <button class="icon-button mobile-close" id="menu-close" type="button" aria-label="Close menu">
+            Close
+          </button>
+          <nav class="mobile-nav" aria-label="Mobile">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="mobile-social">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+      </aside>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-grid"></div>
+          <div class="hero-orb hero-orb-left"></div>
+          <div class="hero-orb hero-orb-right"></div>
+
+          <div class="container hero-content reveal">
+            <p class="eyebrow">Welcome to my world</p>
+            <h1>Hello, I'm <span class="text-gradient">SAMNANG</span></h1>
+            <p class="hero-subtitle">Student Developer · Aspiring Web Developer</p>
+            <div class="typing-line">
+              <span id="typing-text"></span><span class="cursor-blink">|</span>
+            </div>
+            <div class="hero-actions">
+              <a class="primary-button" href="#projects">Explore My Projects</a>
+              <a class="secondary-button" href="#">View Resume</a>
+            </div>
+          </div>
+
+          <div class="scroll-indicator">
+            <a href="#about">
+              <span>Scroll</span>
+              <span class="scroll-arrow">↓</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="section" id="about">
+          <div class="container split-grid">
+            <div class="about-visual reveal">
+              <div class="portrait-frame">
+                <img src="./assets/about.png" alt="Portrait" />
+                <div class="portrait-ring"></div>
+              </div>
+              <div class="status-card">
+                <span>Open to</span>
+                <strong>Internships</strong>
+              </div>
+            </div>
+
+            <div class="about-copy reveal">
+              <h2>About <span class="text-gradient">Me</span></h2>
+              <div class="stacked-copy">
+                <p>
+                  My name is <b>SAMNANG SIM</b> - I'm a passionate computer science student with a strong
+                  drive to learn and build. I love turning ideas into working projects
+                  and I'm constantly exploring new technologies.
+                </p>
+                <p>
+                  I've been teaching myself full-stack development through online
+                  courses, personal projects, and hackathons. I'm comfortable with
+                  React, TypeScript, Python, and I'm always picking up new tools.
+                </p>
+                <p>
+                  I'm actively seeking internship opportunities where I can contribute,
+                  learn from experienced engineers, and grow as a developer.
+                </p>
+              </div>
+
+              <div class="learning-tags">
+                <p class="subheading">Currently Learning</p>
+                <div class="tag-list">
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Node.js</span>
+                  <span>Python</span>
+                  <span>Git</span>
+                  <span>OOP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-muted" id="skills">
+          <div class="container">
+            <div class="section-heading reveal">
+              <h2>Skills & <span class="text-gradient">Technologies</span></h2>
+              <p>What I've learned so far and what I'm working on next.</p>
+            </div>
+
+            <div class="skills-grid">
+              <article class="glass-card reveal">
+                <h3>Languages</h3>
+                <div class="skill-list">
+                  <div class="skill-item" data-level="70">
+                    <div class="skill-row"><span>HTML / CSS</span><span>70%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="55">
+                    <div class="skill-row"><span>JavaScript</span><span>55%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="55">
+                    <div class="skill-row"><span>Python</span><span>55%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="55">
+                    <div class="skill-row"><span>PHP</span><span>55%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="30">
+                    <div class="skill-row"><span>Java</span><span>30%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="glass-card reveal">
+                <h3>Frameworks & Libraries</h3>
+                <div class="skill-list">
+                  <div class="skill-item" data-level="40">
+                    <div class="skill-row"><span>React (learning)</span><span>40%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="50">
+                    <div class="skill-row"><span>TailwindCSS</span><span>50%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="40">
+                    <div class="skill-row"><span>Flask(Library-Phython)</span><span>40%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="50">
+                    <div class="skill-row"><span>ExpressJS</span><span>50%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="30">
+                    <div class="skill-row"><span>Django</span><span>30%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="glass-card reveal">
+                <h3>Tools</h3>
+                <div class="skill-list">
+                  <div class="skill-item" data-level="50">
+                    <div class="skill-row"><span>Git / GitHub</span><span>60%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="65">
+                    <div class="skill-row"><span>VS Code</span><span>80%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="60">
+                    <div class="skill-row"><span>Figma</span><span>60%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="55">
+                    <div class="skill-row"><span>Jira (basics)</span><span>55%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="50">
+                    <div class="skill-row"><span>Postman</span><span>50%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="50">
+                    <div class="skill-row"><span>Douker</span><span>50%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="40">
+                    <div class="skill-row"><span>Wordpress</span><span>40%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="glass-card reveal">
+                <h3>Currently Learning</h3>
+                <div class="skill-list">
+                  <div class="skill-item" data-level="45">
+                    <div class="skill-row"><span>Node.js</span><span>45%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="30">
+                    <div class="skill-row"><span>SQL / Databases</span><span>30%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="40">
+                    <div class="skill-row"><span>TypeScript</span><span>40%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="30">
+                    <div class="skill-row"><span>ExpressJS</span><span>30%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="40">
+                    <div class="skill-row"><span>Dataanalysist</span><span>40%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="45">
+                    <div class="skill-row"><span>OOP</span><span>45%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="30">
+                    <div class="skill-row"><span>Laravel</span><span>30%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                </div>
+              </article>
+              <article class="glass-card reveal">
+                <h3>AI Tools</h3>
+                <div class="skill-list">
+                  <div class="skill-item" data-level="70">
+                    <div class="skill-row"><span>ChartGPT</span><span>70%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="65">
+                    <div class="skill-row"><span>Gemini</span><span>65%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="60">
+                    <div class="skill-row"><span>Stict</span><span>60%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  <div class="skill-item" data-level="65">
+                    <div class="skill-row"><span>Cloud</span><span>65%</span></div>
+                    <div class="skill-bar"><span></span></div>
+                  </div>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="container">
+            <div class="section-heading reveal">
+              <h2>Featured <span class="text-gradient">Projects</span></h2>
+              <p>A selection of things I've built, broken, and rebuilt.</p>
+            </div>
+
+            <div class="project-filters reveal">
+              <button class="filter-button active" data-filter="All" type="button">All</button>
+              <button class="filter-button" data-filter="Web" type="button">Web</button>
+              <!-- <button class="filter-button" data-filter="School" type="button">School</button> -->
+            </div>
+
+            <div class="projects-grid" id="projects-grid"></div>
+          </div>
+        </section>
+
+        <section class="section section-muted" id="experience">
+          <div class="container narrow">
+            <div class="section-heading reveal">
+              <h2>Learning <span class="text-gradient">Journey</span></h2>
+              <p>Education, and growth.</p>
+            </div>
+
+            <div class="timeline">
+              <article class="timeline-item reveal">
+                <p class="timeline-date">2022 - 2024</p>
+                <h3>Banlung City Dormitory High School</h3>
+                <p class="timeline-role">BACII</p>
+                <p>
+                  Successfully passed the national exam and obtained a high school diploma..
+                </p>
+                <!-- <div class="tag-list small">
+                  <span>Data Structures</span>
+                  <span>Algorithms</span>
+                  <span>OOP</span>
+                  <span>Databases</span>
+                </div> -->
+              </article>
+
+              <article class="timeline-item reveal">
+                <p class="timeline-date">2024 - Present</p>
+                <h3>Passerelles numériques cambodia(PNC) </h3>
+                <p class="timeline-role">Associat Degree</p>
+                <p>
+                  Pursuing an Associate Degree in Information Technology.
+                </p>
+                <!-- <div class="tag-list small">
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                  <span>REST APIs</span>
+                </div> -->
+              </article>
+
+              <!-- <article class="timeline-item reveal">
+                <p class="timeline-date">2024</p>
+                <h3>[Hackathon / Competition Name]</h3>
+                <p class="timeline-role">Participant / Winner</p>
+                <p>
+                  Collaborated with a team to build a working prototype in 48 hours and
+                  learned how to ship fast under pressure.
+                </p>
+                <div class="tag-list small">
+                  <span>Teamwork</span>
+                  <span>Rapid Prototyping</span>
+                  <span>Pitching</span>
+                </div>
+              </article> -->
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="testimonials">
+          <div class="container">
+            <div class="section-heading reveal">
+              <h2> <span class="text-gradient">reference</span></h2>
+            </div>
+
+            <div class="testimonial-grid">
+              <article class="glass-card reveal">
+                <div class="testimonial-author">
+                  <strong>Rady Y</strong>
+                  <span>Position: PNC WEB Coordinator</span>
+                  <span>Gmail: rady.y@passerellesnumeriques.org</span>
+                  <span>Phone:  +855 12 251 803</span>
+                </div>
+              </article>
+
+              <article class="glass-card reveal">
+                <div class="testimonial-author">
+                  <strong>Lavy Hou</strong>
+                  <span>Position: PNC English Trainer</span>
+                  <span>Gmail: lavy.hou@passerellesnumeriques.org</span>
+                  <span>Phone: +855 12 723 877</span>
+                </div>
+              </article>
+
+              <article class="glass-card reveal">
+                <div class="testimonial-author">
+                  <strong>Puthy Kry</strong>
+                  <span>Position: PNC PL Trainer</span>
+                  <span>Gmail: puthy.kry@passerellesnumeriques.org</span>
+                  <span>Phone: +855 12 37 6863</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="container contact-grid">
+            <div class="reveal">
+              <div class="section-heading left">
+                <h2>Get In <span class="text-gradient">Touch</span></h2>
+              </div>
+
+              <form class="contact-form" id="contact-form">
+                <label>
+                  <span>Name</span>
+                  <input type="text" name="name" placeholder="Enter name" required />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" placeholder="Enter your Email" required />
+                </label>
+                <label>
+                  <span>Message</span>
+                  <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                </label>
+                <button class="primary-button full-width" type="submit" id="contact-submit">
+                  Send Message
+                </button>
+                <p class="form-success" id="form-success" hidden>
+                  Message Sent! Thanks for reaching out.
+                </p>
+              </form>
+            </div>
+
+            <div class="contact-copy reveal">
+              <h3>Let's connect and <span class="text-gradient">collaborate</span>.</h3>
+              <p>
+                I'm actively looking for internship opportunities. Whether you have a role,
+                advice, or just want to chat about tech, I'd love to hear from you.
+              </p>
+              <div class="contact-points">
+                <div><strong>Email</strong><span>nangnang7720@gmail.com</span></div>
+                <div><strong>Location</strong><span>Stree 371, Sorla, Sensok, Phnom Penh</span></div>
+                <div><strong>Status</strong><span>Available for new projects</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <div>
+            <p class="footer-copy">© <span id="year"></span> SAMNANG. All rights reserved.</p>
+            <p class="footer-note">Made with obsession and Kantumruy Pro.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+          </div>
+          <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+            Top
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <div class="project-modal" id="project-modal" hidden>
+      <div class="project-modal-backdrop" data-close-modal="true"></div>
+      <div class="project-modal-card">
+        <button class="project-modal-close" id="modal-close" type="button" aria-label="Close">
+          Close
+        </button>
+        <img id="modal-image" alt="" />
+        <div class="project-modal-body">
+          <h3 id="modal-title"></h3>
+          <p id="modal-description"></p>
+          <div class="tag-list" id="modal-tags"></div>
+          <div class="modal-actions">
+            <a class="primary-button" id="modal-live" href="#">Live Demo</a>
+            <a class="secondary-button" id="modal-code" href="#">View Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
